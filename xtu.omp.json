@@ -87,5 +87,8 @@
       ]
     }
   ],
-  "final_space": false
+  "final_space": false,
+  "console_title": true,
+  "console_title_template": "{{ .Folder }}",
+  "console_title_style": "template"
 }
