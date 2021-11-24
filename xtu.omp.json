@@ -34,7 +34,6 @@
           "foreground": "#193549",
           "background": "#95ffa4",
           "properties": {
-            "branch_max_length": 30,
             "display_status": true,
             "prefix": "[ ",
             "postfix": " ]"
