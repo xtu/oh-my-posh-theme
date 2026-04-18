@@ -68,13 +68,18 @@
           "background": "#ff8080",
           "type": "exit",
           "style": "powerline"
-        }
-      ]
-    },
-    {
-      "type": "prompt",
-      "alignment": "left",
-      "segments": [
+        },
+        {
+          "properties": {
+            "cache_duration": "none",
+            "threshold": 500,
+            "style": "austin"
+          },
+          "template": " \uf252 {{ .FormattedMs }} ",
+          "foreground": "#FFB86C",
+          "type": "executiontime",
+          "style": "plain"
+        },
         {
           "properties": {
             "cache_duration": "none",
@@ -84,7 +89,13 @@
           "foreground": "#007ACC",
           "type": "time",
           "style": "plain"
-        },
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
         {
           "properties": {
             "cache_duration": "none"
@@ -98,5 +109,10 @@
       "newline": true
     }
   ],
+  "transient_prompt": {
+    "template": "[{{ now | date \"15:04:05\" }}] \u276f ",
+    "foreground": "#7A7A7A",
+    "background": "transparent"
+  },
   "version": 3
 }
